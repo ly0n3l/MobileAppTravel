@@ -6,11 +6,17 @@
              mc:Ignorable="d"
              x:Class="AppTravel.NewTravelPage"
              Title="New Travel">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+                    Text="Save"
+                    Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the New Travel Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="experienceEntry"
+                   Placeholder="Saisissez votre Experience"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

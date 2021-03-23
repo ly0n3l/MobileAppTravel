@@ -6,21 +6,25 @@ namespace AppTravel
 {
     public partial class App : Application
     {
-        public string Databaselocation = string.Empty;
+        public static string DatabaseLocation = string.Empty;
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+
+
         }
         
-        public App(string databaselocation)
+        public App(string databaseLocation)
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
 
-            Databaselocation = databaselocation;
+            DatabaseLocation = databaseLocation;
+
+           
         }
 
         protected override void OnStart()

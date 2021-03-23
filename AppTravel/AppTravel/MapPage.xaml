@@ -4,12 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AppTravel.MapPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Map page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="AppTravel.MapPage"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+
+    <maps:Map x:Name="LocationsMap"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"/>
+
 </ContentPage>
